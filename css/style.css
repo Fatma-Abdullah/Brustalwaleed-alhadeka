@@ -1063,6 +1063,7 @@ body {
   border-radius: 3px;
   font-size: 10px;
 }
+
 .card-title a span {
   font-size: 19px;
 }
@@ -1094,22 +1095,111 @@ h2,
 .h2 {
   font-size: 25px;
   line-height: 40px;
-}.fa-tiktok {
+}
+
+.alertEmoji {
+  font-size: 45px;
+}
+.fa-tiktok {
   color: #111111;
-  
+
   filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 }
-.fa-instagram{
+
+.fa-instagram {
   color: transparent;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-clip: text;
   -webkit-background-clip: text;
 }
-.fab{
+
+.fab {
   font-size: 20px;
 
-}.navbar {
+}
+
+.navbar {
   display: flex;
   justify-content: center;
+}
+
+/* ---- new---- */
+button,
+button:focus,
+button:active {
+  background: none;
+  border: none;
+  outline: none !important;
+}
+
+button.swal2-confirm.swal2-styled {
+  margin: 0;
+  padding: 0;
+}
+
+.swal2-actions {
+  gap: 45px;
+}
+
+h2#swal2-title {
+  font-size: 20px;
+}
+
+button.swal2-cancel.swal2-styled {
+  text-decoration: none;
+  padding: 7px 15px;
+  color: #fff;
+  background-color: #d3252b;
+  border-radius: 10px;
+  z-index: 100;
+  font-size: 15px;
+  animation: whatsapp-animation 0.5s ease-in-out;
+  box-shadow: 1px 2px 5px 2px rgba(30, 30, 30, 0.3);
+  transition: all 0.3s ease-out;
+
+}
+
+.whatsappBtn {
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 15px;
+  color: #fff;
+  background-color: #25D366;
+  border-radius: 10px;
+  z-index: 100;
+  font-size: 15px;
+  animation: whatsapp-animation 0.5s ease-in-out;
+  box-shadow: 1px 2px 5px 2px rgba(30, 30, 30, 0.3);
+  transition: all 0.3s ease-out;
+}
+
+.whatsappBtn:hover {
+  background-color: #128C7E;
+  color: #fff;
+}
+
+button.swal2-cancel.swal2-styled:hover {
+  background-color: #a61a1f;
+  color: #fff;
+}
+
+.fa-whatsapp {
+  font-size: 20px !important;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+@keyframes whatsapp-animation {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%
+  }
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+  background: none !important;
 }
